@@ -3,3 +3,5 @@ dist
 
 # Dev-only tools (local only, never deployed)
 src/dev-tools.tsx
+.vercel
+.env*.local

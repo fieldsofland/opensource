@@ -11,7 +11,7 @@
   "dependencies": {
     "@number-flow/react": "^0.6.0",
     "dease": "npm:@matthewklahn/dease@^1.0.0",
-    "directional-persistence": "^0.1.0",
+    "directional-persistence": "^0.2.0",
     "framer-motion": "^11.0.0",
     "lenis": "^1.3.18-dev.1",
     "lucide-react": "^0.576.0",

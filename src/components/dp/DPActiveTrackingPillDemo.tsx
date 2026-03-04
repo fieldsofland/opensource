@@ -1,4 +1,4 @@
-import { useTrackingPill } from "directional-persistence";
+import { useActiveTrackingPill } from "directional-persistence";
 import type { TrackingPillMode } from "directional-persistence";
 import { useRef, useState, useEffect } from "react";
 import { Prose } from "../Prose";
@@ -19,7 +19,7 @@ function ActivePillNav({
     trackHover,
     hideHover,
     trackActive,
-  } = useTrackingPill({ mode });
+  } = useActiveTrackingPill({ mode });
 
   const [selected, setSelected] = useState(0);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);

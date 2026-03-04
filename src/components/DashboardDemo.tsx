@@ -7,7 +7,7 @@ import {
   EASE_IN_SMOOTH_CSS,
   EASE_QUAD_60_CSS,
 } from "dease";
-import { useTrackingPill } from "directional-persistence";
+import { useActiveTrackingPill } from "directional-persistence";
 import NumberFlow, { type Format } from "@number-flow/react";
 import { Prose } from "./Prose";
 
@@ -356,7 +356,7 @@ export function DashboardDemo() {
     trackHover,
     hideHover,
     trackActive,
-  } = useTrackingPill({ mode: "snap", easing: EASE_IN_SNAPPY_CSS });
+  } = useActiveTrackingPill({ mode: "snap", easing: EASE_IN_SNAPPY_CSS });
 
   const navRefs = useRef<(HTMLDivElement | null)[]>([]);
   const hoverSuppressed = useRef(false);
